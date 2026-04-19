@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pacific Pulse — California Current Ecosystem Early Warning</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>">
+</head>
+<body>
+<div class="app">
+
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <div class="sidebar-logo-title">🌊 Pacific Pulse</div>
+    <div class="sidebar-logo-sub">California Current Early Warning System</div>
+  </div>
+  <hr class="sidebar-divider">
+  <span class="section-label">Navigation</span>
+  <nav>
+    <a href="#" class="active" data-page="home"><span class="nav-icon">🏠</span> Home</a>
+    <a href="#" data-page="analytics"><span class="nav-icon">📊</span> Analytics</a>
+    <a href="#" data-page="ml"><span class="nav-icon">🤖</span> ML Model</a>
+    <a href="#" data-page="game"><span class="nav-icon">🐟</span> Save the Anchovy</a>
+    <a href="#" data-page="about"><span class="nav-icon">ℹ️</span> About</a>
+  </nav>
+  <hr class="sidebar-divider">
+  <span class="section-label">Dataset</span>
+  <div class="sidebar-info">
+    <div>📍 Southern California Bight</div>
+    <div>📅 1949 – 2021</div>
+    <div>🧪 895,371 chemistry samples</div>
+    <div>🐟 91,431 larvae observations</div>
+    <div>🐦 66,814 seabird sightings</div>
+    <div>🌡️ El Niño index 1979–2021</div>
+  </div>
+  <hr class="sidebar-divider">
+  <span class="section-label">Data Sources</span>
+  <div class="sidebar-sources">
+    <div>Scripps / CalCOFI</div>
+    <div>NOAA SWFSC</div>
+    <div>OBIS SEAMAP</div>
+    <div>NOAA MEI Index</div>
+  </div>
+</aside>
+
+<main class="main">
+
+<section class="page active" id="page-home">
+  <div class="hero">
+    <div class="hero-eyebrow">Scripps Institution of Oceanography · CalCOFI · NOAA</div>
+    <h1 class="hero-title">Pacific Pulse</h1>
+    <p class="hero-subtitle">A 70-year ecosystem early warning system for the California Current — tracking ocean chemistry, biological collapse, and projecting what the ecosystem looks like in 2075.</p>
+  </div>
+  <div class="tag-row">
+    <span class="tag">CalCOFI Data</span>
+    <span class="tag">72 Years</span>
+    <span class="tag">414 Species</span>
+    <span class="tag">Southern CA Bight</span>
+    <span class="tag">2075 Forecast</span>
+    <span class="tag">DataHacks 2026</span>
+  </div>
+  <span class="section-label">Key Statistics</span>
+  <div class="metrics-grid">
+    <div class="metric-card"><div class="metric-label">Peak Warming Year</div><div class="metric-value">2015</div><div class="metric-delta">+1.74°C above baseline</div></div>
+    <div class="metric-card"><div class="metric-label">Oxygen Trend</div><div class="metric-value">Declining</div><div class="metric-delta">p = 0.005 — significant</div></div>
+    <div class="metric-card"><div class="metric-label">Worst Anchovy Year</div><div class="metric-value">2020</div><div class="metric-delta">21.8 larvae / 10m²</div></div>
+    <div class="metric-card"><div class="metric-label">Sardine Collapse</div><div class="metric-value">~2039</div><div class="metric-delta">Under current trajectory</div></div>
+  </div>
+  <hr class="divider">
+  <span class="section-label">Project Overview</span>
+  <div class="grid-2-1">
+    <div>
+      <div class="callout"><strong>The core question:</strong><br>As the California Current's ocean chemistry deteriorates, which biological communities collapse first — and if current trends continue, what does the ecosystem look like in 2075?</div>
+      <p style="color:var(--text2);font-size:14.5px;line-height:1.8;margin-top:1rem;">Using 72 years of Scripps/CalCOFI ocean data, Pacific Pulse tracks ecosystem stress across four biological layers — fish larvae, seabirds, biodiversity indices, and coastal species — and builds an early warning classifier that predicts population collapse from ocean chemistry signals one quarter before it occurs.</p>
+    </div>
+    <div>
+      <span class="section-label">Food Web Layers</span>
+      <div class="layer-row"><span class="layer-icon">🌊</span><div><div class="layer-title">Ocean Chemistry</div><div class="layer-desc">Temperature · Oxygen · Nutrients · El Niño</div></div></div>
+      <div class="layer-row"><span class="layer-icon">🐟</span><div><div class="layer-title">Fish Larvae</div><div class="layer-desc">Anchovy · Sardine · Rockfish · Lampfish</div></div></div>
+      <div class="layer-row"><span class="layer-icon">🐦</span><div><div class="layer-title">Seabirds</div><div class="layer-desc">Sooty Shearwater · Cassin's Auklet · Storm Petrel</div></div></div>
+      <div class="layer-row"><span class="layer-icon">🌿</span><div><div class="layer-title">Biodiversity Index</div><div class="layer-desc">Shannon Index · Species Richness · Dominance</div></div></div>
+    </div>
+  </div>
+  <hr class="divider">
+  <span class="section-label">Analysis Phases</span>
+  <div class="phase-grid">
+    <div class="phase-card"><div class="phase-num">PHASE 01</div><div class="phase-title">Chemistry Anomaly Detection</div><div class="phase-desc">Establish that ocean chemistry has measurably changed since 1949 using 72 years of CalCOFI bottle data.</div></div>
+    <div class="phase-card"><div class="phase-num">PHASE 02</div><div class="phase-title">Biological Response — Larvae</div><div class="phase-desc">Identify which fish species collapse first when chemistry crosses stress thresholds.</div></div>
+    <div class="phase-card"><div class="phase-num">PHASE 03</div><div class="phase-title">Biological Response — Seabirds</div><div class="phase-desc">Test whether seabird community composition serves as a leading indicator of ecosystem stress.</div></div>
+    <div class="phase-card"><div class="phase-num">PHASE 04</div><div class="phase-title">Biodiversity Analysis</div><div class="phase-desc">Track Shannon diversity, species richness, and dominance as ecosystem health metrics.</div></div>
+    <div class="phase-card"><div class="phase-num">PHASE 05</div><div class="phase-title">2075 Ecosystem Forecast</div><div class="phase-desc">Project current trends forward under linear trajectory to model the 2075 ecosystem state.</div></div>
+    <div class="phase-card"><div class="phase-num">PHASE 06</div><div class="phase-title">ML Collapse Classifier</div><div class="phase-desc">Gradient boosting model predicting quarterly collapse events from chemistry + El Niño signals.</div></div>
+  </div>
+  <div class="cta-box" style="margin-top:2rem;">
+    <div class="cta-emoji">🐟</div>
+    <div class="cta-title">Save the Anchovy</div>
+    <div class="cta-desc">A daily ocean science game using 30 years of real CalCOFI data. Each day you see real historical ocean conditions — decide how much fishing to allow and see if the anchovy survive.</div>
+    <a class="btn" href="#" data-page="game">🎣 Play Today's Puzzle</a>
+  </div>
+</section>
+
+<section class="page" id="page-analytics">
+  <div class="page-header">
+    <h1 class="page-title">Analytics</h1>
+    <p class="page-subtitle">70 years of CalCOFI ocean chemistry and biological response data</p>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" data-tab="chemistry">🧪 Chemistry</button>
+    <button class="tab-btn" data-tab="larvae">🐟 Fish Larvae</button>
+    <button class="tab-btn" data-tab="seabirds">🐦 Seabirds</button>
+    <button class="tab-btn" data-tab="forecast">📈 2075 Forecast</button>
+  </div>
+  <div class="tab-panel active" id="tab-chemistry">
+    <div class="callout"><strong>Anomalies vs 1950–2000 baseline.</strong> Positive = warmer/higher than historical average. Negative = cooler/lower.</div>
+    <div class="grid-2" style="margin-top:1rem;">
+      <div class="chart-wrap"><span class="chart-title">Temperature Anomaly 1949–2021 + Forecast</span><canvas id="chartTemp" role="img" aria-label="Temperature anomaly time series"></canvas></div>
+      <div class="chart-wrap"><span class="chart-title">Dissolved Oxygen Anomaly 1949–2021 + Forecast</span><canvas id="chartOxy" role="img" aria-label="Oxygen anomaly time series"></canvas></div>
+    </div>
+    <hr class="divider">
+    <span class="section-label">Significant Findings</span>
+    <div class="callout"><strong>Oxygen decline confirmed (p = 0.005).</strong><br>Only chemistry variable with a significant long-term trend — declining at −0.005 ml/L per year since 1949.</div>
+    <div class="callout-warn"><strong>2014–2016 marine heat wave.</strong><br>Temperature peaked at +1.74°C in 2015 — highest in 72 years — coinciding with lowest sardine larvae counts of the modern era.</div>
+    <div class="callout"><strong>Sardine–oxygen correlation: r = 0.48, p = 0.007.</strong><br>Dissolved oxygen is the strongest biological predictor across all chemistry variables tested.</div>
+  </div>
+  <div class="tab-panel" id="tab-larvae">
+    <div class="callout"><strong>Larvae standardized to per 10m² of ocean surface.</strong> CalCOFI ichthyoplankton tows, 1990–2021.</div>
+    <div class="grid-2" style="margin-top:1rem;">
+      <div class="chart-wrap"><span class="chart-title">Northern Anchovy Larvae + 2075 Forecast</span><canvas id="chartAnchovy" role="img" aria-label="Anchovy larvae time series"></canvas></div>
+      <div class="chart-wrap"><span class="chart-title">Pacific Sardine Larvae + 2075 Forecast</span><canvas id="chartSardine" role="img" aria-label="Sardine larvae time series"></canvas></div>
+    </div>
+    <div class="grid-2" style="margin-top:1rem;">
+      <div class="chart-wrap"><span class="chart-title">Rockfish Larvae 1990–2021</span><canvas id="chartRockfish" role="img" aria-label="Rockfish larvae"></canvas></div>
+      <div class="chart-wrap"><span class="chart-title">Oxygen vs Sardine Larvae (r=0.48, p=0.007)</span><canvas id="chartCorr" role="img" aria-label="Oxygen vs sardine scatter"></canvas></div>
+    </div>
+    <div class="callout-warn" style="margin-top:1rem;"><strong>2020 anchovy catastrophic collapse.</strong><br>Dropped to 21.8 larvae/10m² — 95% below 2019. ML model did not predict this, suggesting a driver beyond chemistry.</div>
+    <div class="callout-warn"><strong>Sardine trajectory: local collapse ~2039.</strong><br>Under linear extrapolation, sardine effectively disappear from the Southern California Bight by ~2039.</div>
+  </div>
+  <div class="tab-panel" id="tab-seabirds">
+    <div class="callout"><strong>66,814 sightings across 170 species, 1987–2006.</strong> Collected from the same vessels doing chemistry sampling — perfect spatial overlap with CalCOFI stations.</div>
+    <div class="grid-2" style="margin-top:1rem;">
+      <div class="chart-wrap"><span class="chart-title">Seabird Species Richness 1987–2006</span><canvas id="chartSeabirdRich" role="img" aria-label="Seabird richness"></canvas></div>
+      <div class="chart-wrap"><span class="chart-title">Total Seabird Individuals 1987–2006</span><canvas id="chartSeabirdInd" role="img" aria-label="Seabird individuals"></canvas></div>
+    </div>
+  </div>
+  <div class="tab-panel" id="tab-forecast">
+    <div class="callout"><strong>Linear trend projections — "if nothing changes" forecasts.</strong></div>
+    <div class="callout-warn"><strong>Sardine local extinction modeled ~2039 under current trajectory.</strong></div>
+    <div class="chart-wrap" style="margin-top:1rem;"><span class="chart-title">Multi-Species Forecast to 2075</span><canvas id="chart2075" role="img" aria-label="Multi species forecast to 2075"></canvas></div>
+    <div class="metrics-grid" style="margin-top:1.5rem;">
+      <div class="metric-card"><div class="metric-label">Temperature 2075</div><div class="metric-value">+0.59°C</div><div class="metric-delta">above baseline</div></div>
+      <div class="metric-card"><div class="metric-label">Oxygen 2075</div><div class="metric-value">−0.32 ml/L</div><div class="metric-delta">below baseline</div></div>
+      <div class="metric-card"><div class="metric-label">Anchovy 2075</div><div class="metric-value">~58 / 10m²</div><div class="metric-delta">down from ~500 today</div></div>
+      <div class="metric-card"><div class="metric-label">Sardine 2075</div><div class="metric-value">~0 / 10m²</div><div class="metric-delta">effective local collapse</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="page" id="page-ml">
+  <div class="page-header">
+    <h1 class="page-title">ML Model</h1>
+    <p class="page-subtitle">Gradient boosting early warning classifier for ecosystem collapse</p>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" data-tab="ml-overview">🏗️ Overview</button>
+    <button class="tab-btn" data-tab="ml-results">📉 Results</button>
+    <button class="tab-btn" data-tab="ml-risk">🔮 Collapse Risk</button>
+  </div>
+  <div class="tab-panel active" id="tab-ml-overview">
+    <div class="callout">
+      <strong>Task:</strong> Binary classification — predict whether next quarter will be a collapse event.<br>
+      <strong>Algorithm:</strong> Gradient Boosting Classifier (scikit-learn)<br>
+      <strong>Validation:</strong> Temporal split — trained 1990–2010, tested 2011–2021<br>
+      <strong>Collapse definition:</strong> Larvae below seasonal 25th percentile
+    </div>
+    <div class="grid-2" style="margin-top:1.25rem;">
+      <div>
+        <span class="section-label">Input Features</span>
+        <div class="feature-row"><span class="feature-name">🌡️ Temperature anomaly</span><span class="feature-detail">current + 1-quarter lag</span></div>
+        <div class="feature-row"><span class="feature-name">💧 Dissolved oxygen anomaly</span><span class="feature-detail">current + 1-quarter lag</span></div>
+        <div class="feature-row"><span class="feature-name">🧪 Phosphate anomaly</span><span class="feature-detail">current quarter</span></div>
+        <div class="feature-row"><span class="feature-name">🧪 Nitrate anomaly</span><span class="feature-detail">current quarter</span></div>
+        <div class="feature-row"><span class="feature-name">🌿 Chlorophyll anomaly</span><span class="feature-detail">current quarter</span></div>
+        <div class="feature-row"><span class="feature-name">🌊 El Niño index (MEI)</span><span class="feature-detail">current + lag1 + lag2</span></div>
+        <div class="feature-row"><span class="feature-name">🐠 Shannon diversity index</span><span class="feature-detail">current + 1-quarter lag</span></div>
+        <div class="feature-row"><span class="feature-name">📊 Species richness</span><span class="feature-detail">current + 1-quarter lag</span></div>
+        <div class="feature-row"><span class="feature-name">📊 Dominance index</span><span class="feature-detail">current quarter</span></div>
+      </div>
+      <div>
+        <span class="section-label">Target Species</span>
+        <div class="species-card"><div class="species-common">🐟 Northern Anchovy</div><div class="species-sci">Engraulis mordax</div><div class="species-note">5,309 obs · AUC 0.748</div></div>
+        <div class="species-card"><div class="species-common">🐟 Pacific Sardine</div><div class="species-sci">Sardinops sagax</div><div class="species-note">3,646 obs · AUC 0.311 (poor)</div></div>
+        <div class="species-card"><div class="species-common">🐠 Rockfish</div><div class="species-sci">Sebastes spp.</div><div class="species-note">4,890 obs · TBD</div></div>
+        <div class="species-card"><div class="species-common">🔦 Northern Lampfish</div><div class="species-sci">Stenobrachius leucopsarus</div><div class="species-note">4,025 obs · TBD</div></div>
+        <div class="callout" style="margin-top:1rem;"><strong>Temporal validation:</strong> Trained 1990–2010, tested 2011–2021. Prevents future data leakage.</div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-panel" id="tab-ml-results">
+    <div class="metrics-grid">
+      <div class="metric-card"><div class="metric-label">Anchovy AUC-ROC</div><div class="metric-value">0.748</div><div class="metric-delta">Good — temporal validation</div></div>
+      <div class="metric-card"><div class="metric-label">Anchovy Precision</div><div class="metric-value">100%</div><div class="metric-delta">Zero false alarms</div></div>
+      <div class="metric-card"><div class="metric-label">Sardine AUC-ROC</div><div class="metric-value">0.311</div><div class="metric-delta">Poor — too noisy</div></div>
+      <div class="metric-card"><div class="metric-label">Top Feature</div><div class="metric-value">MEI lag1</div><div class="metric-delta">12.7% importance</div></div>
+    </div>
+    <div class="grid-2" style="margin-top:1rem;">
+      <div class="chart-wrap" style="height:280px;"><span class="chart-title">ROC Curve — Anchovy Classifier</span><canvas id="chartROC" role="img" aria-label="ROC curve"></canvas></div>
+      <div class="chart-wrap" style="height:280px;"><span class="chart-title">Feature Importance</span><canvas id="chartImp" role="img" aria-label="Feature importance"></canvas></div>
+    </div>
+    <hr class="divider">
+    <span class="section-label">Key Findings</span>
+    <div class="callout"><strong>El Niño is the dominant early warning signal.</strong><br>MEI current + lag1 = ~24% of total importance — more than any single chemistry variable.</div>
+    <div class="callout"><strong>100% precision on anchovy collapse predictions.</strong><br>When the model predicts collapse it has never been wrong. Recall is 30% — misses some but zero false alarms.</div>
+    <div class="callout-warn"><strong>2020 collapse not predicted (7.5% probability).</strong><br>Worst anchovy year on record not flagged — driver outside current feature set.</div>
+    <div class="callout-warn"><strong>Sardine model fails (AUC = 0.311).</strong><br>Too few observations, too much variability. Honestly reported rather than hidden.</div>
+  </div>
+  <div class="tab-panel" id="tab-ml-risk">
+    <div class="callout"><strong>Forward collapse risk projection</strong> using projected chemistry trends as model inputs under current oxygen decline trajectory.</div>
+    <div class="metrics-grid" style="margin-top:1.25rem;">
+      <div class="metric-card"><div class="metric-label">2020s Collapse Risk</div><div class="metric-value">TBD</div><div class="metric-delta">per decade</div></div>
+      <div class="metric-card"><div class="metric-label">2050s Collapse Risk</div><div class="metric-value">TBD</div><div class="metric-delta">per decade</div></div>
+      <div class="metric-card"><div class="metric-label">2075 Collapse Risk</div><div class="metric-value">TBD</div><div class="metric-delta">per decade</div></div>
+      <div class="metric-card"><div class="metric-label">Oxygen p-value</div><div class="metric-value">0.005</div><div class="metric-delta">Significant long-term decline</div></div>
+    </div>
+    <div class="callout" style="margin-top:1rem;">Scenario modeling coming soon — current trajectory vs stable oxygen vs accelerated decline.</div>
+  </div>
+</section>
+
+<section class="page" id="page-game">
+  <div id="game-root"></div>
+</section>
+
+<section class="page" id="page-about">
+  <div class="page-header">
+    <h1 class="page-title">About</h1>
+    <p class="page-subtitle">Pacific Pulse — DataHacks 2026</p>
+  </div>
+  <div class="grid-2-1">
+    <div>
+      <span class="section-label">The Project</span>
+      <p style="color:var(--text2);font-size:14.5px;line-height:1.8;">Pacific Pulse was built for DataHacks 2026 using openly available data from the Scripps Institution of Oceanography, NOAA, and OBIS SEAMAP. The project combines 72 years of CalCOFI ocean chemistry measurements with biological response data across multiple trophic levels to build an ecosystem early warning system for the California Current.</p>
+      <span class="section-label" style="margin-top:1.5rem;display:block;">Data Sources</span>
+      <div class="source-row"><div class="source-title">CalCOFI Bottle + Cast Data</div><div class="source-org">Scripps Institution of Oceanography / NOAA</div><div class="source-desc">Ocean chemistry: temperature, salinity, oxygen, nutrients, chlorophyll. 1949–2021.</div></div>
+      <div class="source-row"><div class="source-title">CalCOFI Fish Larvae Counts</div><div class="source-org">NOAA SWFSC — coastwatch.pfeg.noaa.gov</div><div class="source-desc">Ichthyoplankton tow data for 414 species. 1990–2021.</div></div>
+      <div class="source-row"><div class="source-title">Seabird + Marine Mammal Sightings</div><div class="source-org">OBIS SEAMAP — Dataset 507</div><div class="source-desc">70,705 at-sea sightings from CalCOFI cruises. 1987–2006.</div></div>
+      <div class="source-row"><div class="source-title">Multivariate El Niño Index (MEI v2)</div><div class="source-org">NOAA Physical Sciences Laboratory</div><div class="source-desc">Bimonthly El Niño/La Niña intensity index. 1979–present.</div></div>
+    </div>
+    <div>
+      <span class="section-label">Tracks</span>
+      <div class="track-card"><div class="track-title">📊 Data Analytics</div><div class="track-desc">70-year trend analysis, correlation study, and 2075 ecosystem forecast.</div></div>
+      <div class="track-card"><div class="track-title">🤖 Machine Learning</div><div class="track-desc">Gradient boosting collapse classifier with temporal cross-validation.</div></div>
+      <span class="section-label" style="margin-top:1.5rem;display:block;">Tech Stack</span>
+      <span class="tech-badge">Python 3.13</span>
+      <span class="tech-badge">Pandas</span>
+      <span class="tech-badge">NumPy</span>
+      <span class="tech-badge">Scikit-learn</span>
+      <span class="tech-badge">SciPy</span>
+      <span class="tech-badge">Chart.js</span>
+      <span class="tech-badge">CalCOFI ERDDAP</span>
+      <span class="tech-badge">GitHub Pages</span>
+      <div class="callout" style="margin-top:1.5rem;"><strong>Scripps Challenge.</strong><br>Uses CalCOFI dataset from Scripps Institution of Oceanography — eligible for the $1,500 Scripps Challenge.</div>
+    </div>
+  </div>
+</section>
+
+</main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="game.js"></script>
+<script>
+// Navigation
+function navigate(pageId) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+  const page = document.getElementById('page-' + pageId);
+  if (page) page.classList.add('active');
+  const link = document.querySelector(`nav a[data-page="${pageId}"]`);
+  if (link) link.classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+document.querySelectorAll('nav a, a[data-page], button[data-page]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    navigate(a.dataset.page);
+  });
+});
+
+// Analytics tabs
+document.querySelectorAll('#page-analytics .tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const tab = btn.dataset.tab;
+    document.querySelectorAll('#page-analytics .tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('#page-analytics .tab-panel').forEach(p => {
+      p.classList.toggle('active', p.id === 'tab-' + tab);
+    });
+  });
+});
+
+// ML tabs
+document.querySelectorAll('#page-ml .tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const tab = btn.dataset.tab;
+    document.querySelectorAll('#page-ml .tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('#page-ml .tab-panel').forEach(p => {
+      p.classList.toggle('active', p.id === 'tab-' + tab);
+    });
+  });
+});
+</script>
+</body>
+</html>
