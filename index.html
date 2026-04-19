@@ -24,7 +24,7 @@
     <a href="#" class="active" data-page="home"><span>🏠</span> Home</a>
     <a href="#" data-page="analytics"><span>📊</span> Analytics</a>
     <a href="#" data-page="ml"><span>🤖</span> ML Model</a>
-    <a href="#" data-page="game"><span>🐟</span> Save the Anchovy</a>
+    <a href="#" data-page="game"><span>🐟</span> Save the Quarter</a>
     <a href="#" data-page="about"><span>ℹ️</span> About</a>
   </nav>
   <hr class="sidebar-divider">
@@ -66,29 +66,30 @@
   </div>
   <span class="section-label">Key Statistics</span>
   <div class="metrics-grid">
-    <div class="metric-card"><div class="metric-label">Peak Warming Year</div><div class="metric-value">2015</div><div class="metric-delta">+1.74°C above baseline</div></div>
-    <div class="metric-card"><div class="metric-label">Oxygen Trend</div><div class="metric-value">Declining</div><div class="metric-delta">p = 0.005 — significant</div></div>
+    <div class="metric-card"><div class="metric-label">Peak Warming Year</div><div class="metric-value">2015</div><div class="metric-delta">+1.75°C above baseline</div></div>
+    <div class="metric-card"><div class="metric-label">Oxygen Trend</div><div class="metric-value">Rising</div><div class="metric-delta">p = 0.535 — not significant</div></div>
     <div class="metric-card"><div class="metric-label">Worst Anchovy Year</div><div class="metric-value">2020</div><div class="metric-delta">21.8 larvae / 10m²</div></div>
-    <div class="metric-card"><div class="metric-label">Sardine Collapse</div><div class="metric-value">~2039</div><div class="metric-delta">Under current trajectory</div></div>
+    <div class="metric-card"><div class="metric-label">Sardine 2075</div><div class="metric-value">~0 / 10m²</div><div class="metric-delta">Effectively zero by 2050</div></div>
   </div>
   <hr class="divider">
   <span class="section-label">Project Overview</span>
   <div class="grid-2-1">
     <div>
-      <div class="callout"><strong>The core question:</strong><br>As the California Current's ocean chemistry deteriorates, which biological communities collapse first — and what does the ecosystem look like in 2075?</div>
+      <div class="callout"><strong>The core question:</strong><br>As the California Current's ocean chemistry shifts, which biological communities collapse first — and what does the ecosystem look like in 2075?</div>
       <p style="color:var(--text2);font-size:14.5px;line-height:1.8;margin-top:1rem;">Using 72 years of Scripps/CalCOFI ocean data, Pacific Pulse tracks ecosystem stress across four biological layers and builds an early warning classifier that predicts population collapse from ocean chemistry signals one quarter before it occurs.</p>
     </div>
     <div>
       <span class="section-label">Food Web Layers</span>
       <div class="layer-row"><span class="layer-icon">🌊</span><div><div class="layer-title">Ocean Chemistry</div><div class="layer-desc">Temperature · Oxygen · Nutrients · El Niño</div></div></div>
       <div class="layer-row"><span class="layer-icon">🐟</span><div><div class="layer-title">Fish Larvae</div><div class="layer-desc">Anchovy · Sardine · Rockfish · Lampfish</div></div></div>
+      <div class="layer-row"><span class="layer-icon">🐦</span><div><div class="layer-title">Seabirds</div><div class="layer-desc">Sooty Shearwater · Cassin's Auklet · Storm Petrel</div></div></div>
       <div class="layer-row"><span class="layer-icon">🌿</span><div><div class="layer-title">Biodiversity Index</div><div class="layer-desc">Shannon Index · Species Richness · Dominance</div></div></div>
     </div>
   </div>
   <hr class="divider">
   <span class="section-label">Analysis Phases</span>
   <div class="phase-grid">
-    <div class="phase-card"><div class="phase-num">PHASE 01</div><div class="phase-title">Chemistry Anomaly Detection</div><div class="phase-desc">Establish that ocean chemistry has measurably changed since 1949 using 72 years of CalCOFI bottle data.</div></div>
+    <div class="phase-card"><div class="phase-num">PHASE 01</div><div class="phase-title">Chemistry Anomaly Detection</div><div class="phase-desc">Establish how ocean chemistry has shifted since 1949 using 72 years of CalCOFI bottle data.</div></div>
     <div class="phase-card"><div class="phase-num">PHASE 02</div><div class="phase-title">Biological Response — Larvae</div><div class="phase-desc">Identify which fish species collapse first when chemistry crosses stress thresholds.</div></div>
     <div class="phase-card"><div class="phase-num">PHASE 03</div><div class="phase-title">Biological Response — Seabirds</div><div class="phase-desc">Test whether seabird community composition serves as a leading indicator of ecosystem stress.</div></div>
     <div class="phase-card"><div class="phase-num">PHASE 04</div><div class="phase-title">Biodiversity Analysis</div><div class="phase-desc">Track Shannon diversity, species richness, and dominance as ecosystem health metrics.</div></div>
@@ -97,8 +98,8 @@
   </div>
   <div class="cta-box">
     <div class="cta-emoji">🐟</div>
-    <div class="cta-title">Save the Anchovy</div>
-    <div class="cta-desc">A daily ocean science game using 30 years of real CalCOFI data. See real historical conditions — decide how much fishing to allow and see if the anchovy survive.</div>
+    <div class="cta-title">Save the Quarter</div>
+    <div class="cta-desc">A daily ocean science game using 30 years of real CalCOFI data. See real historical conditions — make 5 management decisions and see if the anchovy survive.</div>
     <a class="btn" href="#" data-page="game">🎣 Play Today's Puzzle</a>
   </div>
 </section>
@@ -112,6 +113,7 @@
   <div class="tab-bar">
     <button class="tab-btn active" data-tab="chemistry">🧪 Chemistry</button>
     <button class="tab-btn" data-tab="larvae">🐟 Fish Larvae</button>
+    <button class="tab-btn" data-tab="seabirds">🐦 Seabirds</button>
     <button class="tab-btn" data-tab="forecast">📈 2075 Forecast</button>
     <button class="tab-btn" data-tab="habitat">🗺️ Habitat Shift</button>
   </div>
@@ -123,9 +125,9 @@
     </div>
     <hr class="divider">
     <span class="section-label">Significant Findings</span>
-    <div class="callout"><strong>Oxygen decline confirmed (p = 0.005).</strong><br>Only chemistry variable with a significant long-term trend — declining at −0.005 ml/L per year since 1949.</div>
-    <div class="callout-warn"><strong>2014–2016 marine heat wave.</strong><br>Temperature peaked at +1.74°C in 2015 — highest in 72 years — coinciding with lowest sardine larvae counts of the modern era.</div>
-    <div class="callout"><strong>Sardine–oxygen correlation: r = 0.48, p = 0.007.</strong><br>Dissolved oxygen is the strongest biological predictor across all chemistry variables tested.</div>
+    <div class="callout"><strong>Chlorophyll–sardine correlation: r = 0.41, p = 0.021.</strong><br>Chlorophyll A is the strongest sardine predictor — higher phytoplankton levels support sardine populations.</div>
+    <div class="callout-warn"><strong>2014–2016 marine heat wave.</strong><br>Temperature anomaly peaked at +1.75°C in 2015 — the highest value in the 72-year record — coinciding with the lowest sardine larvae counts of the modern era.</div>
+    <div class="callout"><strong>Sardine–oxygen correlation: r = 0.41, p = 0.022.</strong><br>Dissolved oxygen is the second strongest sardine predictor. No significant chemistry correlations found for anchovy — El Niño and nutrient signals dominate instead.</div>
   </div>
   <div class="tab-panel" id="tab-larvae">
     <div class="callout"><strong>Larvae standardized to per 10m² of ocean surface.</strong> CalCOFI ichthyoplankton tows, 1990–2021.</div>
@@ -135,52 +137,51 @@
     </div>
     <div class="grid-2" style="margin-top:1rem;">
       <div class="chart-wrap"><span class="chart-title">Rockfish Larvae 1990–2021</span><canvas id="chartRockfish"></canvas></div>
-      <div class="chart-wrap"><span class="chart-title">Oxygen vs Sardine Larvae (r=0.48, p=0.007)</span><canvas id="chartCorr"></canvas></div>
+      <div class="chart-wrap"><span class="chart-title">Oxygen vs Sardine Larvae (r=0.41, p=0.022)</span><canvas id="chartCorr"></canvas></div>
     </div>
-    <div class="callout-warn" style="margin-top:1rem;"><strong>2020 anchovy catastrophic collapse.</strong><br>Dropped to 21.8 larvae/10m² — 95% below 2019. ML model did not predict this event.</div>
-    <div class="callout-warn"><strong>Sardine trajectory: local collapse ~2039.</strong><br>Under linear extrapolation, sardine effectively disappear from the Southern California Bight by ~2039.</div>
+    <div class="callout-warn" style="margin-top:1rem;"><strong>2020 anchovy catastrophic collapse.</strong><br>Dropped to 21.8 larvae/10m² — the ML model assigned only 0.8% collapse probability, suggesting a non-chemistry driver.</div>
+    <div class="callout-warn"><strong>Sardine trajectory: effectively zero by 2050.</strong><br>Under linear trend extrapolation, sardine larvae drop to effectively zero in the Southern California Bight by 2050 — a local reproductive collapse under current conditions.</div>
   </div>
-  
+  <div class="tab-panel" id="tab-seabirds">
+    <div class="callout"><strong>66,814 sightings across 170 species, 1987–2006.</strong> Collected from the same CalCOFI vessels — perfect spatial overlap with chemistry stations.</div>
+    <div class="grid-2" style="margin-top:1rem;">
+      <div class="chart-wrap"><span class="chart-title">Seabird Species Richness 1987–2006</span><canvas id="chartSeabirdRich"></canvas></div>
+      <div class="chart-wrap"><span class="chart-title">Total Seabird Individuals 1987–2006</span><canvas id="chartSeabirdInd"></canvas></div>
+    </div>
   </div>
   <div class="tab-panel" id="tab-forecast">
     <div class="callout"><strong>Linear trend projections — "if nothing changes" forecasts.</strong></div>
-    <div class="callout-warn"><strong>Sardine local extinction modeled ~2039 under current trajectory.</strong></div>
+    <div class="callout-warn"><strong>Sardine larvae trend models local reproductive collapse by 2050 under current trajectory.</strong></div>
     <div class="chart-wrap" style="margin-top:1rem;"><span class="chart-title">Multi-Species Forecast to 2075</span><canvas id="chart2075"></canvas></div>
     <div class="metrics-grid" style="margin-top:1.5rem;">
-      <div class="metric-card"><div class="metric-label">Temperature 2075</div><div class="metric-value">+0.59°C</div><div class="metric-delta">above baseline</div></div>
-      <div class="metric-card"><div class="metric-label">Oxygen 2075</div><div class="metric-value">−0.32 ml/L</div><div class="metric-delta">below baseline</div></div>
-      <div class="metric-card"><div class="metric-label">Anchovy 2075</div><div class="metric-value">~58/10m²</div><div class="metric-delta">down from ~500 today</div></div>
-      <div class="metric-card"><div class="metric-label">Sardine 2075</div><div class="metric-value">~0/10m²</div><div class="metric-delta">effective local collapse</div></div>
+      <div class="metric-card"><div class="metric-label">Temperature 2075</div><div class="metric-value">15.94°C</div><div class="metric-delta">up from 14.32°C in 2021</div></div>
+      <div class="metric-card"><div class="metric-label">Oxygen 2075</div><div class="metric-value">5.83 ml/L</div><div class="metric-delta">up from 5.76 ml/L in 2021</div></div>
+      <div class="metric-card"><div class="metric-label">Anchovy 2075</div><div class="metric-value">~58 / 10m²</div><div class="metric-delta">down from ~586 in 2021</div></div>
+      <div class="metric-card"><div class="metric-label">Sardine 2075</div><div class="metric-value">~0 / 10m²</div><div class="metric-delta">effectively zero by 2050</div></div>
     </div>
   </div>
   <div class="tab-panel" id="tab-habitat">
-
     <div class="callout">
       <strong>Ocean Trends 1949–2021</strong><br>
       Measuring temperature, oxygen concentration, chlorophyll, phosphate, and larval count along the western coast over the past 70 years. We see a steady decline in oxygen levels over the past 30 years, reflecting findings from research projects like one from Georgia Tech. We see a slow rise in temperature as well. These larger trends seem to explain the overall decline in larvae hauls — with the exception of the anomalies in more recent times — with populations being unable to sustain themselves in worsening conditions.
     </div>
     <div style="font-size:11px;color:var(--accent3);margin-bottom:1rem;">Gathered from the CalCOFI bottle dataset and the CalCOFI larvae dataset.</div>
-
     <div class="chart-wrap" style="padding:0;overflow:hidden;margin-bottom:1.5rem;">
       <img src="/datahacks-2026/images/ocean_trends_cleaned.png"
            alt="Annual averages and trends of ocean metrics vs larvae counts 1949-2021"
            style="width:100%;display:block;border-radius:var(--r);">
     </div>
-
     <hr class="divider">
-
     <div class="callout">
       <strong>Habitat Shift: Southern CA vs Central CA</strong><br>
       In Southern California, we see a significant negative correlation between temperature and anchovy sightings (measured by number of sightings found in the given area divided by total sightings that year), with a peak in temperature in the mid 2010s correlating with fewer anchovies being seen in Southern California. We see little correlation with a small positive coefficient in the Central California area, which could be explained by warming temperatures reaching more ideal levels for the fish.
     </div>
     <div style="font-size:11px;color:var(--accent3);margin-bottom:1rem;">Gathered from the CalCOFI bottle database and the iNaturalist species dataset.</div>
-
     <div class="chart-wrap" style="padding:0;overflow:hidden;">
       <img src="/datahacks-2026/images/Code_Generated_Image.png"
            alt="Habitat shift Southern CA vs Central CA anchovy responses to warming"
            style="width:100%;display:block;border-radius:var(--r);">
     </div>
-
   </div>
 </section>
 
@@ -212,19 +213,19 @@
       </div>
       <div>
         <span class="section-label">Target Species</span>
-        <div class="species-card"><div class="species-common">🐟 Northern Anchovy</div><div class="species-sci">Engraulis mordax</div><div class="species-note">5,309 obs · AUC 0.748</div></div>
-        <div class="species-card"><div class="species-common">🐟 Pacific Sardine</div><div class="species-sci">Sardinops sagax</div><div class="species-note">3,646 obs · AUC 0.311 (poor)</div></div>
-        <div class="species-card"><div class="species-common">🐠 Rockfish</div><div class="species-sci">Sebastes spp.</div><div class="species-note">4,890 obs · TBD</div></div>
-        <div class="species-card"><div class="species-common">🔦 Northern Lampfish</div><div class="species-sci">Stenobrachius leucopsarus</div><div class="species-note">4,025 obs · TBD</div></div>
+        <div class="species-card"><div class="species-common">🐟 Northern Anchovy</div><div class="species-sci">Engraulis mordax</div><div class="species-note">111 quarterly obs · AUC 0.730</div></div>
+        <div class="species-card"><div class="species-common">🐟 Pacific Sardine</div><div class="species-sci">Sardinops sagax</div><div class="species-note">84 quarterly obs · AUC 0.461 (poor)</div></div>
+        <div class="species-card"><div class="species-common">🐠 Rockfish</div><div class="species-sci">Sebastes spp.</div><div class="species-note">future work</div></div>
+        <div class="species-card"><div class="species-common">🔦 Northern Lampfish</div><div class="species-sci">Stenobrachius leucopsarus</div><div class="species-note">future work</div></div>
       </div>
     </div>
   </div>
   <div class="tab-panel" id="tab-ml-results">
     <div class="metrics-grid">
-      <div class="metric-card"><div class="metric-label">Anchovy AUC-ROC</div><div class="metric-value">0.748</div><div class="metric-delta">Good — temporal validation</div></div>
-      <div class="metric-card"><div class="metric-label">Anchovy Precision</div><div class="metric-value">100%</div><div class="metric-delta">Zero false alarms</div></div>
-      <div class="metric-card"><div class="metric-label">Sardine AUC-ROC</div><div class="metric-value">0.311</div><div class="metric-delta">Poor — too noisy</div></div>
-      <div class="metric-card"><div class="metric-label">Top Feature</div><div class="metric-value">MEI lag1</div><div class="metric-delta">12.7% importance</div></div>
+      <div class="metric-card"><div class="metric-label">Anchovy AUC-ROC</div><div class="metric-value">0.730</div><div class="metric-delta">Good — temporal validation</div></div>
+      <div class="metric-card"><div class="metric-label">Anchovy Precision</div><div class="metric-value">80%</div><div class="metric-delta">Low false alarm rate</div></div>
+      <div class="metric-card"><div class="metric-label">Sardine AUC-ROC</div><div class="metric-value">0.461</div><div class="metric-delta">Poor — too noisy</div></div>
+      <div class="metric-card"><div class="metric-label">Top Feature</div><div class="metric-value">NO3uM</div><div class="metric-delta">23.2% importance</div></div>
     </div>
     <div class="grid-2" style="margin-top:1rem;">
       <div class="chart-wrap" style="height:280px;"><span class="chart-title">ROC Curve — Anchovy Classifier</span><canvas id="chartROC"></canvas></div>
@@ -232,20 +233,20 @@
     </div>
     <hr class="divider">
     <span class="section-label">Key Findings</span>
-    <div class="callout"><strong>El Niño is the dominant early warning signal.</strong><br>MEI current + lag1 = ~24% of total importance — more than any single chemistry variable.</div>
-    <div class="callout"><strong>100% precision on anchovy collapse predictions.</strong><br>When the model predicts collapse it has never been wrong. Recall is 30% — misses some but zero false alarms.</div>
-    <div class="callout-warn"><strong>2020 collapse not predicted (7.5% probability).</strong><br>Worst anchovy year on record not flagged — driver outside current feature set.</div>
-    <div class="callout-warn"><strong>Sardine model fails (AUC = 0.311).</strong><br>Too few observations, too much variability. Honestly reported rather than hidden.</div>
+    <div class="callout"><strong>Nitrate (NO3uM) is the dominant early warning signal.</strong><br>Nitrate accounts for 23.2% of total feature importance in the anchovy classifier — more than any other single variable. Temperature lag and oxygen lag follow at 12.6% and 12.1%.</div>
+    <div class="callout"><strong>80% precision on anchovy collapse predictions.</strong><br>When the model predicts a collapse quarter it is correct 4 out of 5 times. Recall is lower (40%) — it misses some events, but the false alarm rate is low.</div>
+    <div class="callout-warn"><strong>2020 anchovy collapse not predicted (0.8% probability).</strong><br>The worst anchovy year on record was not flagged by chemistry or El Niño signals — suggesting a driver outside the current feature set (disease? COVID-19 sampling gaps?).</div>
+    <div class="callout-warn"><strong>Sardine model fails (AUC = 0.461).</strong><br>With only 84 quarterly observations and high natural variability, sardine cannot be classified reliably. This is an honest finding — we report it rather than hiding it.</div>
   </div>
   <div class="tab-panel" id="tab-ml-risk">
-    <div class="callout"><strong>Forward collapse risk projection</strong> using projected chemistry trends as model inputs under current oxygen decline trajectory.</div>
+    <div class="callout"><strong>Forward collapse risk projection</strong> using projected chemistry trends as model inputs under current trajectory.</div>
     <div class="metrics-grid" style="margin-top:1.25rem;">
-      <div class="metric-card"><div class="metric-label">2020s Collapse Risk</div><div class="metric-value">TBD</div><div class="metric-delta">per decade</div></div>
-      <div class="metric-card"><div class="metric-label">2050s Collapse Risk</div><div class="metric-value">TBD</div><div class="metric-delta">per decade</div></div>
-      <div class="metric-card"><div class="metric-label">2075 Collapse Risk</div><div class="metric-value">TBD</div><div class="metric-delta">per decade</div></div>
-      <div class="metric-card"><div class="metric-label">Oxygen p-value</div><div class="metric-value">0.005</div><div class="metric-delta">Significant long-term decline</div></div>
+      <div class="metric-card"><div class="metric-label">Anchovy AUC</div><div class="metric-value">0.730</div><div class="metric-delta">temporal validation</div></div>
+      <div class="metric-card"><div class="metric-label">Sardine AUC</div><div class="metric-value">0.461</div><div class="metric-delta">insufficient data</div></div>
+      <div class="metric-card"><div class="metric-label">2020 Collapse Prob</div><div class="metric-value">0.8%</div><div class="metric-delta">missed — unknown driver</div></div>
+      <div class="metric-card"><div class="metric-label">Nitrate p-value</div><div class="metric-value">23.2%</div><div class="metric-delta">top feature importance</div></div>
     </div>
-    <div class="callout" style="margin-top:1rem;">Scenario modeling — current trajectory vs stable oxygen vs accelerated decline — coming soon.</div>
+    <div class="callout" style="margin-top:1rem;">Scenario modeling — current trajectory vs stable chemistry vs accelerated change — coming soon.</div>
   </div>
 </section>
 
@@ -263,16 +264,17 @@
   <div class="grid-2-1">
     <div>
       <span class="section-label">The Project</span>
-      <p style="color:var(--text2);font-size:14.5px;line-height:1.8;margin-bottom:1.5rem;">Pacific Pulse was built for DataHacks 2026 using openly available data from the Scripps Institution of Oceanography, NOAA, and OBIS SEAMAP.</p>
+      <p style="color:var(--text2);font-size:14.5px;line-height:1.8;margin-bottom:1.5rem;">Pacific Pulse was built for DataHacks 2026 using openly available data from the Scripps Institution of Oceanography, NOAA, and OBIS SEAMAP. The project combines 72 years of CalCOFI ocean chemistry measurements with biological response data across multiple trophic levels to build an ecosystem early warning system for the California Current.</p>
       <span class="section-label">Data Sources</span>
       <div class="source-row"><div class="source-title">CalCOFI Bottle + Cast Data</div><div class="source-org">Scripps Institution of Oceanography / NOAA</div><div class="source-desc">Ocean chemistry: temperature, salinity, oxygen, nutrients, chlorophyll. 1949–2021.</div></div>
       <div class="source-row"><div class="source-title">CalCOFI Fish Larvae Counts</div><div class="source-org">NOAA SWFSC — coastwatch.pfeg.noaa.gov</div><div class="source-desc">Ichthyoplankton tow data for 414 species. 1990–2021.</div></div>
       <div class="source-row"><div class="source-title">Seabird + Marine Mammal Sightings</div><div class="source-org">OBIS SEAMAP — Dataset 507</div><div class="source-desc">70,705 at-sea sightings from CalCOFI cruises. 1987–2006.</div></div>
       <div class="source-row"><div class="source-title">Multivariate El Niño Index (MEI v2)</div><div class="source-org">NOAA Physical Sciences Laboratory</div><div class="source-desc">Bimonthly El Niño/La Niña intensity index. 1979–present.</div></div>
+      <div class="source-row"><div class="source-title">iNaturalist Species Observations</div><div class="source-org">iNaturalist / California Academy of Sciences</div><div class="source-desc">Anchovy sightings used for habitat shift analysis. 2006–2021.</div></div>
     </div>
     <div>
       <span class="section-label">Tracks</span>
-      <div class="track-card"><div class="track-title">📊 Data Analytics</div><div class="track-desc">70-year trend analysis, correlation study, and 2075 ecosystem forecast.</div></div>
+      <div class="track-card"><div class="track-title">📊 Data Analytics</div><div class="track-desc">70-year trend analysis, correlation study, habitat shift analysis, and 2075 ecosystem forecast.</div></div>
       <div class="track-card"><div class="track-title">🤖 Machine Learning</div><div class="track-desc">Gradient boosting collapse classifier with temporal cross-validation.</div></div>
       <span class="section-label" style="margin-top:1.5rem;display:block;">Tech Stack</span>
       <span class="tech-badge">Python 3.13</span><span class="tech-badge">Pandas</span><span class="tech-badge">NumPy</span><span class="tech-badge">Scikit-learn</span><span class="tech-badge">SciPy</span><span class="tech-badge">Chart.js</span><span class="tech-badge">CalCOFI ERDDAP</span><span class="tech-badge">GitHub Pages</span>
@@ -347,12 +349,10 @@ document.querySelectorAll('#page-ml .tab-btn').forEach(btn=>{
   function drawScene(){
     ctx.fillStyle='#020913';
     ctx.fillRect(0,0,W,H);
-
     const grd=ctx.createRadialGradient(W*0.5,H*0.5,0,W*0.5,H*0.5,W*0.6);
     grd.addColorStop(0,'rgba(5,20,60,0.4)');
     grd.addColorStop(1,'rgba(0,0,0,0)');
     ctx.fillStyle=grd;ctx.fillRect(0,0,W,H);
-
     RIBBONS.forEach(r=>{
       for(let layer=0;layer<5;layer++){
         const frac=layer/4;
@@ -424,33 +424,25 @@ document.querySelectorAll('#page-ml .tab-btn').forEach(btn=>{
   const bubbles=Array.from({length:28},()=>({
     x:Math.random()*window.innerWidth,
     y:Math.random()*window.innerHeight,
-    r:1+Math.random()*4,
-    speed:0.07+Math.random()*0.18,
-    alpha:0.05+Math.random()*0.1,
-    wobble:Math.random()*Math.PI*2,
+    r:1+Math.random()*4,speed:0.07+Math.random()*0.18,
+    alpha:0.05+Math.random()*0.1,wobble:Math.random()*Math.PI*2,
     wobbleAmp:0.2+Math.random()*0.5,
   }));
 
   function drawBubbles(){
     bubbles.forEach(b=>{
-      b.y-=b.speed;b.wobble+=0.012;
-      b.x+=Math.sin(b.wobble)*b.wobbleAmp;
+      b.y-=b.speed;b.wobble+=0.012;b.x+=Math.sin(b.wobble)*b.wobbleAmp;
       if(b.y<-10){b.y=H+10;b.x=Math.random()*W;}
-      ctx.save();
-      ctx.globalAlpha=b.alpha;
-      ctx.strokeStyle='#1a5080';ctx.lineWidth=0.7;
+      ctx.save();ctx.globalAlpha=b.alpha;ctx.strokeStyle='#1a5080';ctx.lineWidth=0.7;
       ctx.beginPath();ctx.arc(b.x,b.y,b.r,0,Math.PI*2);ctx.stroke();
-      ctx.globalAlpha=b.alpha*0.5;
-      ctx.strokeStyle='#4488aa';ctx.lineWidth=0.4;
+      ctx.globalAlpha=b.alpha*0.5;ctx.strokeStyle='#4488aa';ctx.lineWidth=0.4;
       ctx.beginPath();ctx.arc(b.x-b.r*0.28,b.y-b.r*0.28,b.r*0.35,Math.PI*1.1,Math.PI*1.75);ctx.stroke();
       ctx.restore();
     });
   }
 
   function animate(){
-    t++;
-    drawScene();
-    drawBubbles();
+    t++;drawScene();drawBubbles();
     FISH.forEach(f=>{
       f.wobble+=f.wobbleSpeed;f.tailPhase+=f.tailSpeed;f.x+=f.speed*f.dir;
       if(f.x>W+80){f.x=-80;f.y=80+Math.random()*(H-160);}
